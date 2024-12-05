@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'third_screen.dart';
 
 class SecondScreen extends StatelessWidget {
   @override
@@ -20,17 +19,21 @@ class SecondScreen extends StatelessWidget {
             ListTile(
               title: Text('Go to First Screen'),
               onTap: () {
-                Navigator.popUntil(context, ModalRoute.withName('/'));
+                Navigator.pushNamedAndRemoveUntil(
+                  context,
+                  '/',
+                  (route) => false,
+                );
               },
             ),
             ListTile(
               title: Text('Go to Third Screen'),
               onTap: () {
-                Navigator.push(
+                Navigator.pushNamedAndRemoveUntil(
                   context,
-                  MaterialPageRoute(builder: (context) => ThirdScreen()),
-                );
-              },
+                  '/third',
+                  (route) => false,
+                );              },
             ),
           ],
         ),
@@ -41,19 +44,22 @@ class SecondScreen extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                // Return to the first screen.
-                Navigator.pop(context);
+                Navigator.pushNamedAndRemoveUntil(
+                  context,
+                  '/',
+                  (route) => false,
+                );
               },
               child: Text('Go Back to First Screen'),
             ),
             SizedBox(height: 20), // Add some space between buttons
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
+                Navigator.pushNamedAndRemoveUntil(
                   context,
-                  MaterialPageRoute(builder: (context) => ThirdScreen()),
-                );
-              },
+                  '/third',
+                  (route) => false,
+                );              },
               child: Text("To Third Screen"),
             ),
           ],

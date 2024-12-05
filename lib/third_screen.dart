@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'second_screen.dart';
 
 class ThirdScreen extends StatelessWidget {
   @override
@@ -20,17 +19,20 @@ class ThirdScreen extends StatelessWidget {
             ListTile(
               title: Text('Go to First Screen'),
               onTap: () {
-                Navigator.popUntil(context, ModalRoute.withName('/'));
-              },
+                Navigator.pushNamedAndRemoveUntil(
+                  context,
+                  '/',
+                  (route) => false,
+                );              },
             ),
             ListTile(
               title: Text('Go to Second Screen'),
               onTap: () {
-                Navigator.push(
+                Navigator.pushNamedAndRemoveUntil(
                   context,
-                  MaterialPageRoute(builder: (context) => SecondScreen()),
-                );
-              },
+                  '/second',
+                  (route) => false,
+                );              },
             ),
           ],
         ),
@@ -41,19 +43,22 @@ class ThirdScreen extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                // Return to the first screen.
-                Navigator.pop(context);
+                Navigator.pushNamedAndRemoveUntil(
+                  context,
+                  '/',
+                  (route) => false,
+                );
               },
               child: Text('Go Back to First Screen'),
             ),
             SizedBox(height: 20), // Add some space between buttons
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
+                Navigator.pushNamedAndRemoveUntil(
                   context,
-                  MaterialPageRoute(builder: (context) => SecondScreen()),
-                );
-              },
+                  '/second',
+                  (route) => false,
+                );              },
               child: Text("To Second Screen"),
             ),
           ],

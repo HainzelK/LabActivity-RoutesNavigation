@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'second_screen.dart';
-import 'third_screen.dart';
+
 
 class FirstScreen extends StatelessWidget {
   @override
@@ -21,18 +20,20 @@ class FirstScreen extends StatelessWidget {
             ListTile(
               title: const Text('Go to Second Screen'),
               onTap: () {
-                Navigator.push(
+                Navigator.pushNamedAndRemoveUntil(
                   context,
-                  MaterialPageRoute(builder: (context) => SecondScreen()),
+                  '/second',
+                  (route) => false,
                 );
               },
             ),
             ListTile(
               title: const Text('Go to Third Screen'),
               onTap: () {
-                Navigator.push(
+                Navigator.pushNamedAndRemoveUntil(
                   context,
-                  MaterialPageRoute(builder: (context) => ThirdScreen()),
+                  '/third',
+                  (route) => false,
                 );
               },
             ),
@@ -45,9 +46,10 @@ class FirstScreen extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
+                Navigator.pushNamedAndRemoveUntil(
                   context,
-                  MaterialPageRoute(builder: (context) => SecondScreen()),
+                  '/second',
+                  (route) => false,
                 );
               },
               child: Text("To Second Screen"),
@@ -55,9 +57,10 @@ class FirstScreen extends StatelessWidget {
             SizedBox(height: 20), // Add some space between buttons
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
+                Navigator.pushNamedAndRemoveUntil(
                   context,
-                  MaterialPageRoute(builder: (context) => ThirdScreen()),
+                  '/third',
+                  (route) => false,
                 );
               },
               child: Text("To Third Screen"),
