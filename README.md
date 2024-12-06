@@ -24,7 +24,7 @@ Pastikan ada editor kode seperti Android Studio atau Visual Studio Code.
 2. Jalankan aplikasi dengan perintah berikut:
    bash
    flutter run
-
+   atau menggunakan tombol start debugging menggunakan emulator, perangkat Android/iOS        atau web (jika di VSCode)
 ### Cara penggunaan aplikasi
 - Pada screen pertama, klik tombol to the second screen untuk ke screen kedua atau klik tombol to the third screen untuk ke screen ketiga.
 - Pada screen kedua, klik tombol go back to the first screen untuk kembali ke screen pertama atau klik tombol to the third screen untuk ke screen ketiga.
