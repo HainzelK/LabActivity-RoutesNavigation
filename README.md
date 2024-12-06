@@ -7,16 +7,22 @@ Pastikan ada editor kode seperti Android Studio atau Visual Studio Code.
 
 ### Langkah-langkah Instalasi
 1. Clone repositori ini ke komputer Anda:
-   ```bash git clone https://github.com/HainzelK/LabActivity-RoutesNavigation.git ```
+   ```bash
+    git clone https://github.com/HainzelK/LabActivity-RoutesNavigation.git
+    ```
    atau melalui tombol open with github desktop jika anda memiliki github desktop
    kemudian klik clone
    
-2. Navigasikan ke direktori proyek:
-   ```bash cd navigation_codelab```
+3. Navigasikan ke direktori proyek:
+   ```bash
+    cd navigation_codelab
+   ```
    atau navigasi ke folder yang ada hasil gitclonenya
    
-4. Jalankan perintah berikut untuk menginstal dependensi:
-   ```bash flutter pub get```
+5. Jalankan perintah berikut untuk menginstal dependensi:
+   ```bash
+   flutter pub get
+   ```
    
 
 ### Cara Menjalankan Aplikasi
