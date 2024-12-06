@@ -22,7 +22,7 @@ Dalam codelab ini dapat dipelajari cara memindahkan screen menggunakan routing. 
    
 
 ### Cara Menjalankan Aplikasi
-1. Hubungkan perangkat Android atau iOS Anda, atau siapkan emulator.
+1. Hubungkan perangkat Android atau iOS Anda, siapkan emulator atau run menggunakan web edge.
 2. Jalankan aplikasi dengan perintah berikut:
    bash
    flutter run
