@@ -2,10 +2,8 @@
 Dalam codelab ini dapat dipelajari cara memindahkan screen menggunakan routing. Untuk perpindahan screen dapat mengggunakan tombol pindah screen atau menggunakan navbar. 
 
 ## Cara Install dan Pakai
-
-### Prasyarat
-- Pastikan Anda telah menginstal Flutter SDK di komputer Anda.
-- Pastikan Anda memiliki editor kode seperti Android Studio atau Visual Studio Code.
+Pastikan Anda telah menginstal Flutter SDK dan Dart di komputer Anda.
+Pastikan ada editor kode seperti Android Studio atau Visual Studio Code.
 
 ### Langkah-langkah Instalasi
 1. Clone repositori ini ke komputer Anda:
