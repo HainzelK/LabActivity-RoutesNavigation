@@ -2,7 +2,7 @@
 Dalam codelab ini dapat dipelajari cara memindahkan screen menggunakan routing. Untuk perpindahan screen dapat mengggunakan tombol pindah screen atau menggunakan navbar. 
 
 ## Cara menggunakan
-- Buka main.dart
+- Run main.dart
 - Pada screen pertama, klik tombol to the second screen untuk ke screen kedua atau klik tombol to the third screen untuk ke screen ketiga.
 - Pada screen kedua, klik tombol go back to the first screen untuk kembali ke screen pertama atau klik tombol to the third screen untuk ke screen ketiga.
 - Pada screen ketiga, klik tombol go back to the first screen untuk kembali ke screen pertama atau klik tombol to the second screen untuk ke screen kedua.
